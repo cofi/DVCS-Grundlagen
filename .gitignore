@@ -1,13 +1,12 @@
-auto/
+/auto/
 *.aux
 *.log
 *.nav
 *.out
-*.pdf
+/*.pdf
 *.snm
 *.toc
-*.pdf
 *.fdb_latexmk
+/handout.*
 /img/cvcs.png
 /img/dvcs.png
-handout.*
