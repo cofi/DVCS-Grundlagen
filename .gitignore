@@ -8,4 +8,6 @@ auto/
 *.toc
 *.pdf
 *.fdb_latexmk
+/img/cvcs.png
+/img/dvcs.png
 handout.*
