@@ -94,12 +94,39 @@
     \includegraphics[width=\textwidth]{img/cvcs}
   \end{figure}
 \end{frame}
+\begin{frame}{Workflow}
+  \begin{enumerate}[<+->]
+  \item Updaten $\rightarrow$ \texttt{svn update}
+  \item Änderung machen
+  \item Änderungen fixieren $\rightarrow$ \texttt{svn commit}
+  \item Änderungen veröffentlichen (Teil von \texttt{svn commit})
+  \end{enumerate}
+\end{frame}
 \subsection{DVCS}
 \begin{frame}{Aufbau}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{img/dvcs}
   \end{figure}
+\end{frame}
+\begin{frame}{Workflow 1 / n}
+  \begin{enumerate}[<+->]
+  \item Updaten $\rightarrow$ \texttt{git fetch}
+  \item Updates mergen $\rightarrow$ \texttt{git merge}
+  \item Änderung machen
+  \item Änderungen fixieren $\rightarrow$ \texttt{git commit}
+  \item Änderungen veröffentlichen $\rightarrow$ \texttt{git push}
+  \end{enumerate}
+\end{frame}
+\begin{frame}{Workflow 2 / n}
+  \begin{enumerate}[<+->]
+  \item Änderung machen
+  \item Änderungen fixieren $\rightarrow$ \texttt{git commit}
+  \item GoTo 1
+  \item Updaten $\rightarrow$ \texttt{git fetch}
+  \item Änderungen auf Updates anpassen $\rightarrow$ \texttt{git rebase}
+  \item Änderungen veröffentlichen $\rightarrow$ \texttt{git push}
+  \end{enumerate}
 \end{frame}
 \section{Strategien}
 \subsection{Entwicklungsstrategien}
