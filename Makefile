@@ -17,7 +17,7 @@ handout: $(FILE) $(EXPORTED)
 
 .PHONY: clean mrproper
 clean:
-	$(RM) *.aux *.log *.out *.nav *.toc *.snm *.vrb $(EXPORTED)
+	$(RM) *.aux *.log *.out *.nav *.toc *.snm *.vrb
 
 mrproper: clean
-	$(RM) *.pdf auto $(HANDOUT)
+	$(RM) *.pdf auto $(HANDOUT) $(EXPORTED)
