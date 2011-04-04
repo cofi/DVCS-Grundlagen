@@ -13,7 +13,7 @@ handout: $(FILE) $(EXPORTED)
 	@pdflatex $(HANDOUT)
 
 %.png: %.svg
-	@inkscape --without-gui --export-area-drawing --export-png=$@ $<
+	@inkscape --without-gui --export-area-drawing --export-dpi=120 --export-png=$@ $<
 
 .PHONY: clean mrproper
 clean:
