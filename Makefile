@@ -1,6 +1,6 @@
 FILE=talk.tex
 HANDOUT=handout.tex
-EXPORTED=img/cvcs.png img/dvcs.png
+EXPORTED=img/cvcs.pdf img/dvcs.pdf
 RM=rm -rf
 
 presentation: $(FILE) $(EXPORTED)
@@ -14,6 +14,9 @@ handout: $(FILE) $(EXPORTED)
 
 %.png: %.svg
 	@inkscape --without-gui --export-area-drawing --export-dpi=120 --export-png=$@ $<
+
+%.pdf: %.svg
+	@inkscape --without-gui --export-area-drawing --export-dpi=120 --export-pdf=$@ $<
 
 .PHONY: clean mrproper
 clean:
