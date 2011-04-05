@@ -1,6 +1,6 @@
 FILE=talk.tex
 HANDOUT=handout.tex
-EXPORTED=img/cvcs.pdf img/dvcs.pdf img/decentral-setup.pdf img/central-setup.pdf img/integrator-setup.pdf
+EXPORTED=img/cvcs.pdf img/dvcs.pdf img/decentral-setup.pdf img/central-setup.pdf img/integrator-setup.pdf img/index.pdf
 RM=rm -rf
 
 presentation: $(FILE) $(EXPORTED)
